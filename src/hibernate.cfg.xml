@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+    "-//Hibernate/Hibernate Configuration DTD//EN"
+    "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+  <session-factory>
+    <property name="hibernate.connection.driver_class">oracle.jdbc.OracleDriver</property>
+    <property name="hibernate.connection.url">jdbc:oracle:thin:@132.72.65.216:1521:oracle</property>
+    <property name="hibernate.dialect">org.hibernate.dialect.Oracle9iDialect</property>
+    <property name="hibernate.show_sql">false</property>
+    <property name="hibernate.format_sql">true</property>
+    <mapping class="Database_Classes.Administrators"/>
+    <mapping resource="Database_Classes/Administrators.hbm.xml"/>
+    <mapping class="Database_Classes.History"/>
+    <mapping resource="Database_Classes/History.hbm.xml"/>
+    <mapping class="Database_Classes.Loginlog"/>
+    <mapping resource="Database_Classes/Loginlog.hbm.xml"/>
+    <mapping class="Database_Classes.Mediaitems"/>
+    <mapping resource="Database_Classes/Mediaitems.hbm.xml"/>
+    <mapping class="Database_Classes.Similarity"/>
+    <mapping resource="Database_Classes/Similarity.hbm.xml"/>
+    <mapping class="Database_Classes.Users"/>
+    <mapping resource="Database_Classes/Users.hbm.xml"/>
+  </session-factory>
+</hibernate-configuration>
